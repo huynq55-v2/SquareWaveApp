@@ -26,7 +26,7 @@ static aaudio_data_callback_result_t dataCallback(
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_example_squarewave_MainActivity_nativeStart(
+Java_com_example_squarewaveapp_MainActivity_nativeStart(
         JNIEnv* env, jobject /* this */, jdouble frequency) {
 if (playing.load()) return;
 phase = 0.0;
@@ -55,7 +55,7 @@ AAudioStream_requestStart(newStream);
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_example_squarewave_MainActivity_nativeStop(
+Java_com_example_squarewaveapp_MainActivity_nativeStop(
         JNIEnv* env, jobject /* this */) {
 if (!playing.load()) return;
 AAudioStream* s = stream.load();

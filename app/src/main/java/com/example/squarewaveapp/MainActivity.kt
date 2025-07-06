@@ -1,4 +1,4 @@
-package com.example.squarewave
+package com.example.squarewaveapp
 
 import android.os.Bundle
 import android.widget.Button

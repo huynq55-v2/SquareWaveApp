@@ -50,6 +50,12 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    tasks.whenTaskAdded {
+        if (name == "assembleDebug") {
+            dependsOn(":app:externalNativeBuildDebug")
+        }
+    }
 }
 
 dependencies {
