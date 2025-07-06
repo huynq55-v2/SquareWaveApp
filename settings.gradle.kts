@@ -19,4 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SquareWave"
+rootProject.name = "SquareWaveApp"
+include(":app")
+ 
