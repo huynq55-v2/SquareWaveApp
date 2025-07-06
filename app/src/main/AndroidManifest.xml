@@ -1,13 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.squarewave">
+    package="com.example.squarewaveapp">
 
     <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="34" />
 
     <application
         android:allowBackup="true"
-        android:label="SquareWave"
+        android:label="SquareWaveApp"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

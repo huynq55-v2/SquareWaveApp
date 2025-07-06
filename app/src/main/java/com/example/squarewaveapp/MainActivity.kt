@@ -5,6 +5,8 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
+import com.example.squarewaveapp.R
+
 class MainActivity : AppCompatActivity() {
     companion object {
         init { System.loadLibrary("native-lib") }

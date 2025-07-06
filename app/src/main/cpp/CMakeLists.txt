@@ -7,10 +7,7 @@ add_library(
         native-lib.cpp
 )
 
-find_library(
-        log-lib
-        log
-)
+find_library(log-lib log)
 
 # Enable AAudio library (Android 8.0+)
 add_library(
@@ -26,6 +23,6 @@ set_target_properties(
 
 target_link_libraries(
         native-lib
-        aaudio
-        \${log-lib}
+        ${log-lib}
+        -laaudio
 )
